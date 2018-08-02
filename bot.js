@@ -7,12 +7,11 @@ client.on("guildMemberAdd", member => {
 setTimeout(function(){
   member.createDM().then(function (channel) {
   return channel.send(`**
-قد تكون نهاية اشياء بداية لأشياء أجمل https://discord.gg/tagSsfA :sparkles:..# 
+قد تكون نهاية اشياء بداية لأشياء أجمل :sparkles:..# 
 
  **`) 
 },3000);
 
 }).catch(console.error)
 })
-
 client.login(process.env.BOT_TOKEN); 
