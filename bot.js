@@ -1,17 +1,20 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const A7MD = new Discord.Client();
 
-console.log("Welcome Savage.");
+console.log("BOT ONLINE");
  
-client.on("guildMemberAdd", member => {
-setTimeout(function(){
+A7MD.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`**
-قد تكون نهاية اشياء بداية لأشياء أجمل :sparkles:..# 
+  return channel.send(` 
+**
+السلام عليكم ياعيني..
+ابيك بموضوع مهم هنا اذا ما عليك أمر !
 
- **`) 
-},3000);
+  [ https://discord.gg/HunzvKc ] 
 
-
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
 })
+
 client.login(process.env.BOT_TOKEN); 
