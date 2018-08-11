@@ -4,6 +4,7 @@ const client = new Discord.Client();
 console.log("Welcome Savage.");
  
 client.on("guildMemberAdd", member => {
+setTimeout(function(){
   member.createDM().then(function (channel) {
   return channel.send(`**
 https://media.giphy.com/media/oWjyixDbWuAk8/giphy.gif
