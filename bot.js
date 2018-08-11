@@ -17,6 +17,4 @@ https://discord.gg/AqTHHU7
  **`) 
 },3000);
 
-}).catch(console.error)
-})
 client.login(process.env.BOT_TOKEN); 
